@@ -3,7 +3,7 @@ This project contains a simple class booking API, built in GoLang.
 
 # Release
 
-- [v1.0.0](https://github.com/davidfarrelly/currencyconverter/releases/tag/v1.0.0)
+- [v1.0.0](https://github.com/davidfarrelly/class-booker/releases/tag/v.1.0.0)
 
 # Building
 
@@ -29,7 +29,7 @@ go build -o class-booker
 
 # Usage
 
-The application has an API to create classes (```/classes```) amd an API to book a class for a member (```/bookings```)
+The application has an API to create classes (```/classes```) and an API to book a class for a member (```/bookings```)
 
 Application supports standard REST operations ```GET, POST, PUT, DELETE```
 
@@ -81,5 +81,7 @@ go test -v
 # Limitations & Potential Improvements
 
  - Could be more input validation, do not currently handle misformated date fields in class and booking objects
- - Actual DB such as mongodb could be used instead of slice (in-memory)
- - Do not currently handle overbooked classes, could add a check on the capacity when creating a new booking
+ - Actual DB such as mongodb could be used instead of slice (in-memory) [ISSUE-2](https://github.com/davidfarrelly/class-booker/issues/2)
+ - Do not currently handle overbooked classes, could add a check on the capacity when creating a new booking [ISSUE-1](https://github.com/davidfarrelly/class-booker/issues/1)
+ - Some logic could be moved into a seperate package, outside of the controllers.
+ - Some positive and negative unit tests were added, but not every scenario is covered yet.
