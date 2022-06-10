@@ -68,6 +68,7 @@ Application supports standard REST operations ```GET, POST, PUT, DELETE```
     "className": "yoga",
     "date": "2022-06-20"
 }
+```
 
 # Testing
 
